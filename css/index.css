@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+.outfit-btn {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: norma;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+.head{
+    background-image: linear-gradient(#1A62B6,#4e8BB7);
+    color: white;
+    height: 36vh;
+    padding: 3em;
+}
+.img{
+    display: flex;
+    justify-content: center;
+}
+.head .img img{
+    height: 50%;
+}
+.text {
+    font-size: 1.3em;
+}
+.navbar{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar span{
+    font-weight: 900;
+}
+.logo{
+    font-size: 2em;
+}
+
+ul{
+    font-size: 2em;
+    list-style-type: none;
+    display: flex;
+    gap: 3em;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.intro{
+    display: flex;
+    padding: 3em 0px;
+
+}
+.desc-btn{
+    display: flex;
+    gap: 6em;
+    margin: 3em 0px;
+}
+.navbtns{
+    display: flex;
+}
+.btn-start{
+    background-color: #1A62B6;
+    border: none;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: white;
+    padding: 0.8em;
+    border-radius: 2em;
+
+}
+.btn-see{
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 2em;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: white;
+    padding: 0.8em;
+}
+.eventbody{
+    padding: 1em;
+    text-overflow: ellipsis;
+    height: 1px;
+}
+.outfit-p{
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.eventhead img{
+    max-width: 100%;
+}
+.outfit-pb{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: bold;
+  }
+  .eventhead {
+  }
+.events-body{
+    background-color: rgb(197, 224, 247);
+}
+.event{
+    background-color: white;
+    box-shadow: 2px 0px 10px black;
+    border-radius: 2em;
+    margin: 20px;
+    width: 22%;
+    height: 50vh;
+    overflow: hidden;
+}
+.eventrow{
+    padding:0px 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.person{
+    width: 2em;
+    height: 2em;
+    border: 2px solid white;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.person:hover{
+    cursor: pointer;
+}
+.title-date{
+    display: flex;
+    gap: 1.4em;
+}
+.dtime{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.dtime .date{
+    font-size: 2em;
+}
+.title-desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.title{
+    font-size: 1.4em;
+}
+.aroundevent{
+    display: flex;
+    justify-content: space-between;
+    padding:1em 3em;
+}
+.aroundevent .txt{
+    font-size: 2em;
+}
+.filters{
+    display: flex;
+    justify-content: space-between;
+    gap: 5em;
+}
+.filters div{
+    display: flex;
+    align-items: center;
+    background-color: #1A62B6;
+    border-radius: 2em;
+    color: white;
+    padding: 1em;
+    cursor: pointer;
+}
+.event:hover{
+    flex-grow: 1;
+    z-index: 10000;
+    box-shadow: 3px 0 15px black;
+    cursor: pointer;
+    gap: 0px;
+}
+.evnt{
+    color: #1A62B6;
+    border: 2px solid #1A62B6;
+}
+.morebtn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin:1.3em;
+}
+.ownevnt{
+    display: flex;
+    gap: 10em;
+    padding:3em;
+}
+.ownevnt .desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.crtitle{
+    font-size: 2em;
+    margin-top: 2em;
+}
+.footer{
+    background-color: black;
+    height: 30em;
+}
+.search{
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    background-color: #c8e3f6;
+}
+.search input{
+    padding-left: 2em;
+    width: 45%;
+    height: 3em;
+    border: 2px solid #1A62B6;
+    border-radius:2em 0px 0px 2em;
+}
+.search button{
+    width: 7%;
+    background-color: #1A62B6;
+    color: white;
+    height: 3.2em;
+    border: 2px solid #1A62B6;
+    border-radius:0px 2em 2em 0px;
+}
+.search input:focus{
+    outline: none;
+}
+button{
+   cursor: pointer;
+}
+.foot{
+    padding: 3em;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #03152a;
+}
+.footer .desc{
+    color: white;
+}
+.footer .foo{
+    font-size: 1.5em;
+}
