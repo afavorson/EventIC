@@ -1,20 +1,30 @@
+/* import */
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
-.outfit-btn {
-  font-family: "Outfit", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 900;
-  font-style: norma;
-}
+/* Universal styling */
 *{
     padding: 0;
     margin: 0;
 }
+
+/* header container */
 .head{
     background-image: linear-gradient(#1A62B6,#4e8BB7);
     color: white;
     height: 36vh;
     padding: 3em;
+}
+.navbar{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.outfit-btn {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: norma;
 }
 .img{
     display: flex;
@@ -26,12 +36,7 @@
 .text {
     font-size: 1.3em;
 }
-.navbar{
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+
 .navbar span{
     font-weight: 900;
 }
@@ -102,6 +107,8 @@ a{
     font-weight: bold;
   }
   .eventhead {
+    /* code */
+    /* display: none; */
   }
 .events-body{
     background-color: rgb(197, 224, 247);
