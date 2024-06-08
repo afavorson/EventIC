@@ -4,12 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/f6d3e01bef.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/css" href="../css/dashboard.css">
 </head>
-<body>
-    <div class="profile">
-    </div>
-    <div class="info">
+<body class="font-['ubuntu']">
+   <div class="navbar bg-slate-900 h-100 w-100 p-5 flex justify-between border-solid items-center">
+        <div class="logo text-white">
+            Even<span class=" font-bold">Tic</span>
+        </div>
+        <div class="account bg-white rounded-full p-1">
+            <i class="fa-solid fa-user"></i>
+        </div>
+   </div>
 
-    </div>
+   <div class="content flex h-[100vh] w-[100%]">
+        <div class="sidenav bg-slate-900 p-4 ">
+            <ul class="text-white flex flex-col">
+                <li class="bg-slate-100 p-3 text-slate-900 flex items-center gap-3">
+                    <i class="fa-solid fa-plus text-slate-900"></i>
+                    Add New Event
+                </li>
+                <li class="flex items-center gap-3 p-3">
+                    <i class="fa-solid fa-check text-white "></i>
+                    All Active Events
+                </li>
+                <li class="flex items-center gap-3 p-3">
+                    <i class="fa-solid fa-rocket text-white"></i>
+                    Runing Ads
+                </li>
+                <li class="flex items-center gap-3 p-3">
+                    <i class="fa-solid fa-file-pen text-white"></i>
+                    Drafted Events
+                </li>
+                <li class="flex items-center gap-3 p-3">
+                    <i class="fa-solid fa-clock text-white"></i>
+                    Events History
+                </li>
+            </ul>
+        </div>
+        <div class="main  w-[100%]">
+            <div class="main1 p-3 overflow-y-scroll max-h-[100%]">
+                <p class="text-slate-400">
+                    EvenTic
+                </p>
+                <div class="evntform">
+                    <h3 class="text-center">Create Your Event</h3>
+                    <div class="form flex flex-col">
+                        <label class="mt-8" for="event-type">Select Event Type<span class="text-red-500">*</span></label>
+                        <select name="evnt-type" id="event-type">
+                            <option value="Public">Public Event</option>
+                            <option value="invited">Only Invited People</option>
+                        </select>
+                        <label class="mt-8" for="title">Event Title<span class="text-red-500">*</span></label>
+                        <input type="text" name="title">
+                        <label class="mt-8" for="title">Event Description<span class="text-red-500">*</span></label>
+                        <textarea name="title"></textarea>
+                        <div class="config-price mt-5">
+                            <h3 class="text-center mb-3">Configure Ticket Prices</h3>
+                            <div class="prices flex">
+                                <div class="confi flex flex-col items-center">
+                                    <h4>Regular</h4>
+                                    <input type="number">
+                                </div>
+                                <div class="confi flex flex-col items-center">
+                                    <h4>Classic</h4>
+                                    <input type="number">
+                                </div>
+                                <div class="confi flex flex-col items-center">
+                                    <h4>VIP</h4>
+                                    <input type="number">
+                                </div>
+                                <div class="confi flex flex-col items-center">
+                                    <h4>VVIP</h4>
+                                    <input type="number">
+                                </div>
+                            </div>
+                        </div>
+                        <label class="mt-8" for="title">Vip Table Content<span class="text-red-500">*</span></label>
+                        <textarea name="title"></textarea>
+                        <label class="mt-8" for="title">VVip Table Content<span class="text-red-500">*</span></label>
+                        <textarea name="title"></textarea>
+                        <div class="action-btns">
+                            <button>Save As Draft</button>
+                            <button>Publish Event</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </div>
 </body>
 </html>
